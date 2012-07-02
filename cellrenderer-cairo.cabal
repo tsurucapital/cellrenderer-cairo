@@ -19,6 +19,7 @@ library
   -- other-modules:       
   c-sources:           c-exts/gtkcellrenderercairo.c
   include-dirs:        c-exts
+  ghc-options:         -Wall
   includes:            gtkcellrenderercairo.h
   build-depends:       base >= 4 && < 5,
                        glib ==0.12.*,

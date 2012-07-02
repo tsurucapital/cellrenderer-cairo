@@ -1,4 +1,6 @@
 {-# LANGUAGE CPP, ForeignFunctionInterface #-}
+{-# OPTIONS_GHC -fno-warn-missing-signatures #-}
+
 -- -*-haskell-*-
 --  GIMP Toolkit (GTK) CellRendererCairo
 --
@@ -46,6 +48,7 @@ module Graphics.UI.Gtk.ModelView.CellRendererCairo (
   CellRendererCairoClass,
   castToCellRendererCairo, gTypeCellRendererCairo,
   toCellRendererCairo,
+  withCellRendererCairo,
 
 -- * Constructors
   cellRendererCairoNew,
@@ -61,10 +64,7 @@ import Control.Monad	(liftM, unless)
 import Control.Monad.Reader (runReaderT)
 
 import System.Glib.FFI
-import System.Glib.Attributes             (WriteAttr, writeAttr)
 import System.Glib.GType
-import System.Glib.Properties
-import System.Glib.Signals                (GClosure (..))
 import System.Glib.Types
 import Graphics.UI.Gtk.Abstract.Object		(makeNewObject)
 import Graphics.UI.Gtk
