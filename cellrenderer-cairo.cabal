@@ -21,7 +21,8 @@ library
   c-sources:           c-exts/gtkcellrenderercairo.c
   include-dirs:        c-exts
   ghc-options:         -Wall
-  includes:            gtkcellrenderercairo.h
+  includes:            gtk/gtk.h, gtkcellrenderercairo.h
+  pkgconfig-depends:   gtk+-2.0
   build-depends:       base >= 4 && < 5,
                        glib ==0.12.*,
                        gtk ==0.12.*,
