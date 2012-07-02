@@ -11,7 +11,8 @@ maintainer:          jwlato@gmail.com
 category:            Graphics
 build-type:          Simple
 cabal-version:       >=1.8
-extra-source-files:  c-exts
+extra-source-files:  c-exts/gtkcellrenderercairo.c,
+                     c-exts/gtkcellrenderercairo.h
 
 
 library
